@@ -1,0 +1,120 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "7 de Junio del 2023",
+    title: "Recuerdo #1",
+    company: "El primer mensaje",
+    description:
+      "Como olvidar la primera vez que nos mensajeamos después de andar todos felices jajaja, de verdad desde la primera vez que escuche lo de la moto, tu voz, tu forma de ser por mensajes, algo me engancho, sigo recordando ese día con gusto.",
+  },
+  {
+    date: "Junio 2023",
+    title: "Recuerdos #2",
+    company: "Las llamadas antes del Tae",
+    description:
+      "Imposible olvidar como cada vez antes de salir al tae casi siempre nos llamábamos, para hablar un rato estar felices juntos, y claro que mi luz no desaprovecharía para molestar poquito, pero dios amaba eso me encantaba tu voz, y de hecho puedo decir que en efecto que tú vos desde el principio siempre ha sido la misma y sigo amándola de verdad, la amo y te amo a ti mi vida.",
+  },
+  {
+    date: "5 de Julio del 2023",
+    title: "Recuerdo #3",
+    company: "El comienzo de algo más",
+    description:
+      "Amor, que más puedo decir de esta fecha, fue el día en que por fin me declare a ti y pues aceptaste, y dios no puedo decir nada más que gracias, porque ha sido la experiencia más linda de mi vida, compartir mi vida con alguien que sabes que te ama tanto como tú la amas a ella, y venga no puedo ocultar como desde esos días ya me tratabas tan lindo como ahora, de verdad es de las cosas que no paro de querer, que desde el día 1 has sido tú y dios no puedo pedir nada más que seguirte teniendo a mi lado, que este sea el primer año de muchos amor.",
+  },
+  {
+    date: "Julio del 2023",
+    title: "Recuerdos #4",
+    company: "Mis días en el trabajo donde solo pensaba en ti",
+    description:
+      "Incluso cuando estaba trabajando no dejaba de querer poder seguir hablando contigo, aunque fuera solo un rato pequeño poder mandar mensajes, contestarte, y venga en cuanto podía aprovechaba, escondiéndome en el baño, yendo a una esquinita o a cualquier lugar solo para recordarte lo mucho que te extrañaba, decirte cuanto te amo y sobre todo dios, poder contarte de como iba, era lo mejor, tener esos momentitos con mi luz mientras estaba ahí, esa experiencia de trabajar fue buena porque me acompañaste en ella, gracias amor.",
+  },
+  {
+    date: "Agosto-Diciembre del 2023",
+    title: "Recuerdos #5",
+    company: "La época del proyecto",
+    description:
+      "Esta época fue liosa por el problema de volver a tener clases todo el día y a la vez no poder estar tan atento como me gustaría, pero a la vez fue lindo poder igual pasar todo ese proceso de preocupación junto a ti, sobre todo aquellos días en los que nos tomábamos un tiempo y hacíamos llamada en la universidad, donde me alejaba y podía pasar el tiempo con la persona que amo, dios todas las veces que estaba sonriente mucho al móvil y sobre todo porque eras tú, ame esa época mucho porque de verdad estar contigo me alegraba la vida y el alma, gracias por vivir esa época conmigo luz <3.",
+  },
+  {
+    date: "19 de Agosto del 2023",
+    title: "Recuerdo #6",
+    company: "Mi cumpleaños con regalo",
+    description:
+      "Realmente no hay palabras para decirte lo mucho que mi cumpleaños mejoro por tenerte en él, de verdad, mi cumpleaños muchas veces ya no lo esperaba con tanto gusto, pero esta vez, fue diferente, tú lo hiciste diferente y fue lindo, gracias de verdad por haber pasado el cumpleaños conmigo un ratito y con lo mejor que me podrías haber dado, un rato de tu tiempo para poder hacer videollamada, poder ver cara a cara a mi novia, de verdad ese momento, ese día no lo cambio por nada, fue lo más lindo y de verdad migue feli, dios incluso poder verte sonrojada, sip, escribo todo esto feliz, mucho, te amo y gracias por alegrar mi cumpleaños.",
+  },
+  {
+    date: "Agosto-Diciembre del 2023",
+    title: "Recuerdos #7",
+    company: "Los primeros eventos de Tae",
+    description:
+      "Hubo muchos momentos en los que no podíamos hablar seguido por una u otra cosa, y a veces eso eran los torneos, pero eso no quitaba que de verdad, cada vez que iba y voy en medio de las áreas pienso en ti, en como estarás, en sí estás bien, en que sea lo más pronto posible la comida para poder escribirte, estás en mi cabeza siempre amor, te amo.",
+  },
+  {
+    date: "Agosto-Diciembre del 2023",
+    title: "Recuerdos #8",
+    company: "Migue ebrio XD",
+    description:
+      "Ni que decir, jajaja, cada vez que me ponía a tomar o ponía happy venías a mi mente, siempre vienes a mi mente, y dios si me descontrolo y grito mucho y créeme no paro de pensar, quiero mandarle audios a Luz, quiero que me escuche feli y que sepa que la pienso mucho porque si..., la amo de veritas de veritas con toda mi alma y ser.",
+  },
+  {
+    date: "11 de Noviembre del 2023",
+    title: "Recuerdo #9",
+    company: "Primera vez en Plato",
+    description:
+      "Pensé que habíamos jugado plato antes, pero bueno igual fue lindo poder tener ahora una app juntos donde pudiéramos jugar a la vez, y sobre todo sería la app que usaríamos en adelante, recuerdo las tremendas arrastradas que me diste en el de las cartas jaja,y si las que me sigues dando, pero quedar en ridículo es un buen precio por compartir tiempo contigo amor, te amo de verdad, te amo mucho.",
+  },
+  {
+    date: "20 de Noviembre del 2023",
+    title: "Recuerdo #10",
+    company: "La peli de Alicia",
+    description:
+      "La primera vez que vimos película juntos, y bueno, no puedo negar, experiencia de lo mejor jajja, amo y ame poder compartir algo que te gusta, lo adore mucho, me encanto, te amo y de verdad ocupamos compartir más momentos así eh XD.",
+  },
+  {
+    date: "Diciembre del 2023",
+    title: "Recuerdos #11",
+    company: "Vísperas navideñas y Año Nuevo",
+    description:
+      "Nada como poder andar de meloso, queriendo acurrucarse mientras le contestas a tu novia, de verdad de las mejores Navidades que he pasado, y sip ha sido porque has estado ahí, de verdad, además del año nuevo también muy placentero pudiendo estar compartiendo aunque sea un poco del tiempo de ambos para pasarla juntos, te amo mi vida y que sepas que cada Navidad y año nuevo andaré más meloso ^^.",
+  },
+  {
+    date: "9 de Febrero del 2024",
+    title: "Recuerdo #12",
+    company: "El cumpleaños del amor de mi vida",
+    description:
+      "Amor, sé que tus cumpleaños no son lo tuyo, pero es día importante para mí, así que poder haber estado aunque sea un ratito para ti fue maravilloso, sobre todo saber que a pesar de los problemas que había en esa época se pudo lograr pasarla bien, te amo con toda el alma, así que mientras me pida calma te la daré, pero cuando no, créeme descargaré mucho amor sobre ti sobre todo en tu día, así que este es un aviso que días de cumpleaños juntos prepárate porque te consentiré en cada forma que pueda mi amor <3.",
+  },
+  {
+    date: "Enero-Mayo del 2024",
+    title: "Recuerdos #13",
+    company: "Más viajes XD",
+    description:
+      "A pesar de que hubo un montón de viajes, no hubo nada mejor que poder saber que en el camino, me acompañabas, que en ellos podía estar escribiéndote y estarías así para mí, de verdad has sido la mejor compañía como amiga, novia, pareja, y dios alma gemela que podría haber deseado, gracias, gracias por todos esos momentos donde me diste apoyo a hacer las cosas que quiero, no hay palabras para agradecer de verdad tu amor, tu afecto, tu cariño, gracias de verdad no sé qué sería si no hubieras estado ahí, te amo y dios no deseo separarme de ti en la vida amor.",
+  },
+  {
+    date: "15 de Junio del 2024",
+    title: "Recuerdo #14",
+    company: "La Graduación",
+    description:
+      "Que decirte además de que ha sido uno de los mejores días de mi vida y si tuvo mucho que ver que estuvieras ahí, poder hacer la videollamada, que me vieras, que me chulearas, qué dios nos viéramos un poquito y estar riendo, de verdad, top 5 momentos más lindos de mi vida, de verdad que sí, gracias amor, gracias por todo ese cariño y amor desinteresado, de verdad ese día no paraba de estar todo feliz acordándome de la llamada, de como me viste y me dijiste tanta cosa linda jajaja, ame y amo esos momentos contigo los amo con todo mi ser.",
+  },
+  {
+    date: "Actualidad",
+    title: "Tú y yo",
+    company: "Juntos",
+    description:
+      "Bueno, llegamos a la actualidad, donde puedo decir que soy el chico más feliz del mundo porque puedo vivir día con día felizmente al lado de la persona que amo, que considero el amor de mi vida, con la que quiero pasar el resto de mi vida junto a ella, la que día con día hace que me quiera superar a mí mismo, que provoca tanta sonrisa, risas y una que otra vez cosas calientes en mí, que no paro de amar, de desear poder hacerla feliz tanto como ella me hace serlo, de verdad, sigo diciendo, no hay palabras suficientes para decir cuanto agradezco a Dios de poder tenerte a mi lado, de tener a una persona tan maravillosa que no para de enamorarme más y más, gracias amor, gracias por existir, por ser tú, no espero nada más que seas siendo tú, la chica que amo, te amo mi vida, te amo con todo mi ser y no paro de hacerlo.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
